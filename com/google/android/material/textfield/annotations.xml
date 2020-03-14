@@ -1,0 +1,5 @@
+<root>
+    <item name='com.google.android.material.textfield.TextInputLayout'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
