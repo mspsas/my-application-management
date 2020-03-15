@@ -24,4 +24,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void viewdata(View view)
+    {
+        /*String data = selectsql.getData();
+        Message.message(this,data);*/
+    }
+
 }

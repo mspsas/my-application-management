@@ -83,24 +83,25 @@ public class signup_form extends AppCompatActivity {
 
     //this method is used to connect XML views to its Objects
     private void initViews() {
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        editTextUserName = (EditText) findViewById(R.id.editTextUserName);
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
-        textInputLayoutUserName = (TextInputLayout) findViewById(R.id.textInputLayoutUserName);
-        buttonRegister = (Button) findViewById(R.id.btn1);
+        editTextPassword = findViewById(R.id.editTextPassword);
+        editTextUserName = findViewById(R.id.editTextUserName);
+        editTextEmail = findViewById(R.id.editTextEmail);
+        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutUserName = findViewById(R.id.textInputLayoutUserName);
+        buttonRegister = findViewById(R.id.btn1);
 
     }
+
 
     //This method is used to validate input given by user
     public boolean validate() {
         boolean valid = false;
 
         //Get values from EditText fields
-        String UserName = editTextUserName.getText().toString();
-        String Email = editTextEmail.getText().toString();
-        String Password = editTextPassword.getText().toString();
+        String UserName = textInputLayoutUserName.getEditText().getText().toString();
+        String Email = textInputLayoutEmail.getEditText().getText().toString();
+        String Password = textInputLayoutPassword.getEditText().getText().toString();
 
         //Handling validation for UserName field
         if (UserName.isEmpty()) {

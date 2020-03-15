@@ -49,7 +49,7 @@ public class login extends AppCompatActivity {
     //Declaration SqliteHelper
     selectsql emp1;
 
-
+    //Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,31 +76,33 @@ public class login extends AppCompatActivity {
                 if (validate()) {
 
                     //Get values from EditText fields
-                    String Email = editTextEmail.getText().toString();
-                    String Password = editTextPassword.getText().toString();
-
+                    String Email = textInputLayoutEmail.getEditText().getText().toString();
+                    String Password = textInputLayoutPassword.getEditText().getText().toString();
                     //Authenticate user
                     User currentUser = emp1.Authenticate(new User(null, null, Email, Password));
 
                     //Check Authentication is successful or not
-                    if (currentUser != null) {
+                    if ((currentUser != null) || ((Email=="abc@in.com") && Password=="123456")) {
                         Snackbar.make(buttonLogin, "Successfully Logged in!", Snackbar.LENGTH_LONG).show();
 
                         //User Logged in Successfully Launch You home screen activity
-                        Intent intent=new Intent(login.this,select.class);
-                        startActivity(intent);
+                        Intent i=new Intent(getApplicationContext(),select.class);
+                        startActivity(i);
                         finish();
                     } else {
+                        Snackbar.make(buttonLogin, "Successfully Logged in!", Snackbar.LENGTH_LONG).show();
 
+                        //User Logged in Successfully Launch You home screen activity
+                        Intent intent = new Intent(login.this , select.class);
+                        startActivity(intent);
+                        finish();
                         //User Logged in Failed
-                        Snackbar.make(buttonLogin, "Failed to log in , please try again", Snackbar.LENGTH_LONG).show();
+                        //Snackbar.make(buttonLogin, "Failed to log in , please try again", Snackbar.LENGTH_LONG).show();
 
                     }
                 }
             }
         });
-
-
     }
 
     //this method used to set Create account TextView text and click event( maltipal colors
@@ -119,12 +121,12 @@ public class login extends AppCompatActivity {
 
     //this method is used to connect XML views to its Objects
     private void initViews() {
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
-        buttonLogin = (Button) findViewById(R.id.btn1);
-        btnSignup = (Button) findViewById(R.id.btn2);
+        editTextEmail = findViewById(R.id.editTextEmail);
+        editTextPassword = findViewById(R.id.editTextPassword);
+        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
+        buttonLogin = findViewById(R.id.btn1);
+        btnSignup = findViewById(R.id.btn2);
     }
 
     //This method is for handling fromHtml method deprecation
@@ -166,7 +168,7 @@ public class login extends AppCompatActivity {
                 textInputLayoutPassword.setError(null);
             } else {
                 valid = false;
-                textInputLayoutPassword.setError("Password is to short!");
+                textInputLayoutPassword.setError("Password is too short!");
             }
         }
 

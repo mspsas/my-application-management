@@ -41,12 +41,12 @@
         app:layout_constraintVertical_bias="0.147" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btna"
         android:layout_width="171dp"
         android:layout_height="52dp"
         android:text="ADD"
         android:background="@drawable/background1"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/btnu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,19 +54,19 @@
         app:layout_constraintVertical_bias="0.904" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnu"
         android:layout_width="173dp"
         android:layout_height="53dp"
         android:layout_marginBottom="52dp"
         android:text="UPDATE"
         android:background="@drawable/background1"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/btnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnd"
         android:layout_width="169dp"
         android:layout_height="46dp"
         android:layout_marginBottom="52dp"

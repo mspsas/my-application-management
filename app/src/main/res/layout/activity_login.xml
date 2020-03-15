@@ -70,6 +70,5 @@
         android:textColor="#ffffff"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_rounded"
-
         />
 </LinearLayout>
