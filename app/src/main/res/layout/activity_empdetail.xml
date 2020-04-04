@@ -5,6 +5,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/animated"
-    tools:context=".empdetail">
+    tools:context=".empdetail"
+    android:background="@drawable/small">
 
+
+    <Button
+        android:id="@+id/btnup"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/newbutton"
+        android:text="UPDATE"
+        android:textColor="#FA71CD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <Button
+        android:id="@+id/btnad"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/newbutton"
+        android:text="ADD"
+        android:textColor="#FA71CD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <Button
+        android:id="@+id/btndel"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/newbutton"
+        android:text="DELETE"
+        android:textColor="#FA71CD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <EditText
+        android:id="@+id/epname"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:hint="Employee name"
+        android:textColorHint="#18FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:hint="Employee id"
+        android:textColorHint="#18FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:hint="Enter sex"
+        android:textColorHint="#18FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:hint="Enter age"
+        android:textColorHint="#18FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/depname"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:hint="Department name"
+        android:textColorHint="#18FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btngd"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/newbutton"
+        android:text="GET DETAILS"
+        android:textColor="#FA71CD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
 </androidx.constraintlayout.widget.ConstraintLayout>

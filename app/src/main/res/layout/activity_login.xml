@@ -21,7 +21,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/tfusername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_username"
@@ -41,7 +41,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/tfpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
@@ -52,7 +52,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/Blogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -62,7 +62,7 @@
         android:background="@drawable/button_rounded"
         />
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/Bsignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/register"

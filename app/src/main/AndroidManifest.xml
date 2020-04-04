@@ -12,13 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".department"></activity>
-        <activity android:name=".project">        </activity>
-        <activity android:name=".empdetail" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".department">        </activity>
+        <activity android:name=".project" />
         <activity android:name=".select" />
-        <activity android:name=".signup_form" />
         <activity android:name=".login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".empdetail" />
+        <activity android:name=".signup_form">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

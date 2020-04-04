@@ -20,13 +20,14 @@
        >
 
         <EditText
+            android:id="@+id/tfname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/string"
             android:ems="10"
+            android:hint="@string/string"
+            android:importantForAutofill="no"
             android:inputType="text"
-            android:textSize="22sp"
-            android:importantForAutofill="no" />
+            android:textSize="22sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutUserName"
@@ -38,7 +39,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextUserName"
+            android:id="@+id/tfuname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_username"
@@ -58,7 +59,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/tfemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/e_mail"
@@ -77,7 +78,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/tfpass1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
@@ -96,7 +97,7 @@
         >
 
         <EditText
-            android:id="@+id/editTextPassword1"
+            android:id="@+id/tfpass2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_confirm_password"
@@ -138,7 +139,7 @@
 
         </RadioGroup>
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/Blogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/register"
@@ -146,6 +147,7 @@
             android:textColor="#ffffff"
             android:layout_marginTop="40dp"
             android:background="@drawable/button_rounded"
+            android:onClick="onsignup_formClick"
             />
 
 
